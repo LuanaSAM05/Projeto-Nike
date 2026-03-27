@@ -69,7 +69,6 @@ p {
 .imagem-tenis {
     width: 700px;
     transform: rotate(-25deg);
-    filter: drop-shadow(38px 45px 40px #161616);
     transition: 1s;
 
 }
