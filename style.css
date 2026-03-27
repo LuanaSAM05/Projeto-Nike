@@ -124,3 +124,115 @@ background: #ff9eb5;
 .azul {
 background: #58cced;
 }
+
+/* TEXTOS RESPONSIVOS */
+h1 {
+    font-size: clamp(2rem, 6vw, 80px);
+}
+
+h4 {
+    font-size: clamp(1rem, 3vw, 30px);
+}
+
+p {
+    font-size: clamp(0.9rem, 2vw, 16px);
+}
+
+/* IMAGEM RESPONSIVA */
+.imagem-tenis {
+    width: clamp(250px, 50vw, 700px);
+}
+
+/* 📱 TABLET */
+@media (max-width: 1024px) {
+
+    body {
+        padding: 20px 30px;
+    }
+
+    .caixa-principal {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .caixa-texto {
+        max-width: 90%;
+    }
+
+    .imagem-tenis {
+        width: 400px;
+        transform: rotate(-15deg);
+    }
+
+    body::after {
+        font-size: 120px;
+    }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+        overflow: auto; /* MUITO IMPORTANTE */
+    }
+
+    body::before {
+        left: -600px;
+    }
+
+    body::after {
+        font-size: 80px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .caixa-principal {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+    }
+
+    .caixa-texto {
+        text-align: center;
+    }
+
+    .imagem-tenis {
+        width: 280px;
+        transform: rotate(-10deg);
+    }
+
+    .caixa-botao {
+        justify-content: center;
+    }
+
+    .botoes {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* 📱 MOBILE PEQUENO */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .imagem-tenis {
+        width: 220px;
+    }
+
+    body::after {
+        font-size: 60px;
+    }
+
+    .botoes {
+        width: 50px;
+        height: 50px;
+    }
+}
