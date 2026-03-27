@@ -225,12 +225,19 @@ p {
         text-align: center; 
         line-height: 1.2;
         margin-top: 20px;
+        color: black;
+    }
+
+    h4 {
+        color: black;
+        
     }
 
     p {
         font-size: 20px;
         text-align: center;
         margin-right: 50px;
+        color: black;
     }
 
     /* IMAGEM DO TÊNIS - MESMO TAMANHO E CENTRALIZADA */
